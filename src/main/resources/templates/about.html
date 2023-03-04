@@ -1,0 +1,27 @@
+<!DOCTYPE html SYSTEM "http://www.thymeleaf.org/dtd/xhtml1-strict-thymeleaf-4.dtd">
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" media="all" th:href="@{/css/app.css}"/>
+    <title>Aboutpage</title>
+</head>
+<body>
+
+<h1>About Page</h1>
+<p>This is all about me</p>
+<ol>
+    <li th:text="${myName}">my name</li>
+    <li th:text="${myAddress}">my address</li>
+    <li th:text="${myCity}">my city</li>
+</ol>
+
+<p th:text="|Ik ben ${myName} en ik woon in ${myAddress} ${myCity} |"></p>
+
+<p><a th:href="@{/}">home</a></p>
+
+
+
+
+
+</body>
+</html>

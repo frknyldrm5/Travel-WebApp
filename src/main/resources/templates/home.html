@@ -1,12 +1,28 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html SYSTEM "http://www.thymeleaf.org/dtd/xhtml1-strict-thymeleaf-4.dtd">
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
 <head>
   <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" media="all" th:href="@{/css/app.css}"/>
   <title>Homepagina</title>
 </head>
 <body>
+
+
+<nav class="nav">
+  <h1>Let's Party</h1>
+  <a class="buttonLook" th:href="${/home}">home</a>
+  <a class="buttonLook" th:href="${/about}">about</a>
+  <a class="buttonLook" th:href="${/venuedetails}">venuedetails</a>
+  <a class="buttonLook" th:href="${/pay}">pay</a>
+</nav>
+
+<div class="freespaceforheader"></div>
+
+
 <h1>Homepagina</h1>
-<h2>Home</h2>
+<p th:text="${value}">onbekend nummer</p>
+
+
 
 
 </body>
